@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Poornima Kallam builds list with divs</title>
+
+    <style>
+      .flex-container {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        margin-top: 20px;
+      }
+
+      .divlist {
+        border: 2px solid black;
+        padding: 10px;
+        background-color: lightblue;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Poornima Kallam builds list with divs</h1>
+
+    <input type="text" id="inputText" placeholder="Enter item" />
+
+    <br /><br />
+
+    <button onclick="addEnd()">Add end</button>
+    <button onclick="addFront()">Add front</button>
+    <button onclick="removeItem()">Remove</button>
+
+    <div class="flex-container" id="container">
+      <div class="divlist">Item 1</div>
+      <div class="divlist">Item 2</div>
+      <div class="divlist">Item 3</div>
+    </div>
+
+    <script>
+      function addEnd() {
+        var newDiv = document.createElement("div");
+
+        var inputValue = document.getElementById("inputText").value;
+
+        newDiv.innerHTML = inputValue;
+
+        newDiv.className = "divlist";
+
+        var container = document.getElementById("container");
+
+        container.appendChild(newDiv);
+      }
+
+      function addFront() {
+        var newDiv = document.createElement("div");
+
+        var inputValue = document.getElementById("inputText").value;
+
+        newDiv.innerHTML = inputValue;
+
+        newDiv.className = "divlist";
+
+        var container = document.getElementById("container");
+
+        container.insertBefore(newDiv, container.firstChild);
+      }
+
+      function removeItem() {
+        var divListItems = document.getElementsByClassName("divlist");
+
+        if (divListItems.length > 1) {
+          divListItems[1].remove();
+        } else if (divListItems.length == 1) {
+          divListItems[0].remove();
+        }
+      }
+    </script>
+  </body>
+</html>

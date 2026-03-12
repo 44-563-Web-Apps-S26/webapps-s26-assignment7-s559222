@@ -13,65 +13,6 @@
 
   <body class="bg-light">
     <div class="container text-center mt-5">
-      <hr class="my-4" />
-      <h3>Game Field</h3>
-
-      <div class="container">
-        <!-- Row 1 -->
-        <div class="row mb-2">
-          <div class="col"><img src="image1.png" class="img-fluid" /></div>
-          <div class="col"><img src="image1.png" class="img-fluid" /></div>
-          <div class="col"><img src="image1.png" class="img-fluid" /></div>
-          <div class="col"><img src="image1.png" class="img-fluid" /></div>
-          <div class="col"><img src="image1.png" class="img-fluid" /></div>
-          <div class="col"><img src="image1.png" class="img-fluid" /></div>
-          <div class="col"><img src="image1.png" class="img-fluid" /></div>
-        </div>
-
-        <!-- Row 2 -->
-        <div class="row mb-2">
-          <div class="col"><img src="image1.png" class="img-fluid" /></div>
-          <div class="col"><img src="image1.png" class="img-fluid" /></div>
-          <div class="col"><img src="image1.png" class="img-fluid" /></div>
-          <div class="col"><img src="image1.png" class="img-fluid" /></div>
-          <div class="col"><img src="image1.png" class="img-fluid" /></div>
-          <div class="col"><img src="image1.png" class="img-fluid" /></div>
-          <div class="col"><img src="image1.png" class="img-fluid" /></div>
-        </div>
-
-        <!-- Row 3 -->
-        <div class="row mb-2">
-          <div class="col"><img src="image1.png" class="img-fluid" /></div>
-          <div class="col"><img src="image1.png" class="img-fluid" /></div>
-          <div class="col"><img src="image1.png" class="img-fluid" /></div>
-          <div class="col"><img src="image1.png" class="img-fluid" /></div>
-          <div class="col"><img src="image1.png" class="img-fluid" /></div>
-          <div class="col"><img src="image1.png" class="img-fluid" /></div>
-          <div class="col"><img src="image1.png" class="img-fluid" /></div>
-        </div>
-
-        <!-- Row 4 -->
-        <div class="row mb-2">
-          <div class="col"><img src="image1.png" class="img-fluid" /></div>
-          <div class="col"><img src="image1.png" class="img-fluid" /></div>
-          <div class="col"><img src="image1.png" class="img-fluid" /></div>
-          <div class="col"><img src="image1.png" class="img-fluid" /></div>
-          <div class="col"><img src="image1.png" class="img-fluid" /></div>
-          <div class="col"><img src="image1.png" class="img-fluid" /></div>
-          <div class="col"><img src="image1.png" class="img-fluid" /></div>
-        </div>
-
-        <!-- Row 5 -->
-        <div class="row">
-          <div class="col"><img src="image1.png" class="img-fluid" /></div>
-          <div class="col"><img src="image1.png" class="img-fluid" /></div>
-          <div class="col"><img src="image1.png" class="img-fluid" /></div>
-          <div class="col"><img src="image1.png" class="img-fluid" /></div>
-          <div class="col"><img src="image1.png" class="img-fluid" /></div>
-          <div class="col"><img src="image1.png" class="img-fluid" /></div>
-          <div class="col"><img src="image1.png" class="img-fluid" /></div>
-        </div>
-      </div>
       <h1 class="mb-4">Poornima Kallam Bird Hunt</h1>
 
       <p class="lead">
@@ -79,15 +20,444 @@
         statue
       </p>
 
-      <div id="locations" class="alert alert-primary mt-3">
+      <div id="locations" class="alert alert-primary">
         Number of locations checked is zero.
       </div>
 
       <div id="score" class="alert alert-success">Score is zero.</div>
 
-      <div class="alert alert-warning">Click for help.</div>
+      <div class="alert alert-warning" onclick="help()">Click for help.</div>
 
       <div id="help" class="alert alert-info">Help report</div>
+
+      <hr class="my-4" />
+      <h3>Game Field</h3>
+
+      <div class="container">
+        <div class="row mb-2">
+          <div class="col">
+            <img
+              id="img0"
+              src="image1.png"
+              class="img-fluid"
+              onclick="check(0)"
+            />
+          </div>
+          <div class="col">
+            <img
+              id="img1"
+              src="image1.png"
+              class="img-fluid"
+              onclick="check(1)"
+            />
+          </div>
+          <div class="col">
+            <img
+              id="img2"
+              src="image1.png"
+              class="img-fluid"
+              onclick="check(2)"
+            />
+          </div>
+          <div class="col">
+            <img
+              id="img3"
+              src="image1.png"
+              class="img-fluid"
+              onclick="check(3)"
+            />
+          </div>
+          <div class="col">
+            <img
+              id="img4"
+              src="image1.png"
+              class="img-fluid"
+              onclick="check(4)"
+            />
+          </div>
+          <div class="col">
+            <img
+              id="img5"
+              src="image1.png"
+              class="img-fluid"
+              onclick="check(5)"
+            />
+          </div>
+          <div class="col">
+            <img
+              id="img6"
+              src="image1.png"
+              class="img-fluid"
+              onclick="check(6)"
+            />
+          </div>
+        </div>
+
+        <div class="row mb-2">
+          <div class="col">
+            <img
+              id="img7"
+              src="image1.png"
+              class="img-fluid"
+              onclick="check(7)"
+            />
+          </div>
+          <div class="col">
+            <img
+              id="img8"
+              src="image1.png"
+              class="img-fluid"
+              onclick="check(8)"
+            />
+          </div>
+          <div class="col">
+            <img
+              id="img9"
+              src="image1.png"
+              class="img-fluid"
+              onclick="check(9)"
+            />
+          </div>
+          <div class="col">
+            <img
+              id="img10"
+              src="image1.png"
+              class="img-fluid"
+              onclick="check(10)"
+            />
+          </div>
+          <div class="col">
+            <img
+              id="img11"
+              src="image1.png"
+              class="img-fluid"
+              onclick="check(11)"
+            />
+          </div>
+          <div class="col">
+            <img
+              id="img12"
+              src="image1.png"
+              class="img-fluid"
+              onclick="check(12)"
+            />
+          </div>
+          <div class="col">
+            <img
+              id="img13"
+              src="image1.png"
+              class="img-fluid"
+              onclick="check(13)"
+            />
+          </div>
+        </div>
+
+        <div class="row mb-2">
+          <div class="col">
+            <img
+              id="img14"
+              src="image1.png"
+              class="img-fluid"
+              onclick="check(14)"
+            />
+          </div>
+          <div class="col">
+            <img
+              id="img15"
+              src="image1.png"
+              class="img-fluid"
+              onclick="check(15)"
+            />
+          </div>
+          <div class="col">
+            <img
+              id="img16"
+              src="image1.png"
+              class="img-fluid"
+              onclick="check(16)"
+            />
+          </div>
+          <div class="col">
+            <img
+              id="img17"
+              src="image1.png"
+              class="img-fluid"
+              onclick="check(17)"
+            />
+          </div>
+          <div class="col">
+            <img
+              id="img18"
+              src="image1.png"
+              class="img-fluid"
+              onclick="check(18)"
+            />
+          </div>
+          <div class="col">
+            <img
+              id="img19"
+              src="image1.png"
+              class="img-fluid"
+              onclick="check(19)"
+            />
+          </div>
+          <div class="col">
+            <img
+              id="img20"
+              src="image1.png"
+              class="img-fluid"
+              onclick="check(20)"
+            />
+          </div>
+        </div>
+
+        <div class="row mb-2">
+          <div class="col">
+            <img
+              id="img21"
+              src="image1.png"
+              class="img-fluid"
+              onclick="check(21)"
+            />
+          </div>
+          <div class="col">
+            <img
+              id="img22"
+              src="image1.png"
+              class="img-fluid"
+              onclick="check(22)"
+            />
+          </div>
+          <div class="col">
+            <img
+              id="img23"
+              src="image1.png"
+              class="img-fluid"
+              onclick="check(23)"
+            />
+          </div>
+          <div class="col">
+            <img
+              id="img24"
+              src="image1.png"
+              class="img-fluid"
+              onclick="check(24)"
+            />
+          </div>
+          <div class="col">
+            <img
+              id="img25"
+              src="image1.png"
+              class="img-fluid"
+              onclick="check(25)"
+            />
+          </div>
+          <div class="col">
+            <img
+              id="img26"
+              src="image1.png"
+              class="img-fluid"
+              onclick="check(26)"
+            />
+          </div>
+          <div class="col">
+            <img
+              id="img27"
+              src="image1.png"
+              class="img-fluid"
+              onclick="check(27)"
+            />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <img
+              id="img28"
+              src="image1.png"
+              class="img-fluid"
+              onclick="check(28)"
+            />
+          </div>
+          <div class="col">
+            <img
+              id="img29"
+              src="image1.png"
+              class="img-fluid"
+              onclick="check(29)"
+            />
+          </div>
+          <div class="col">
+            <img
+              id="img30"
+              src="image1.png"
+              class="img-fluid"
+              onclick="check(30)"
+            />
+          </div>
+          <div class="col">
+            <img
+              id="img31"
+              src="image1.png"
+              class="img-fluid"
+              onclick="check(31)"
+            />
+          </div>
+          <div class="col">
+            <img
+              id="img32"
+              src="image1.png"
+              class="img-fluid"
+              onclick="check(32)"
+            />
+          </div>
+          <div class="col">
+            <img
+              id="img33"
+              src="image1.png"
+              class="img-fluid"
+              onclick="check(33)"
+            />
+          </div>
+          <div class="col">
+            <img
+              id="img34"
+              src="image1.png"
+              class="img-fluid"
+              onclick="check(34)"
+            />
+          </div>
+        </div>
+      </div>
     </div>
+
+    <script>
+      var ids = [
+        "img0",
+        "img1",
+        "img2",
+        "img3",
+        "img4",
+        "img5",
+        "img6",
+        "img7",
+        "img8",
+        "img9",
+        "img10",
+        "img11",
+        "img12",
+        "img13",
+        "img14",
+        "img15",
+        "img16",
+        "img17",
+        "img18",
+        "img19",
+        "img20",
+        "img21",
+        "img22",
+        "img23",
+        "img24",
+        "img25",
+        "img26",
+        "img27",
+        "img28",
+        "img29",
+        "img30",
+        "img31",
+        "img32",
+        "img33",
+        "img34",
+      ];
+
+      var score = 0;
+      var locationsVisited = 0;
+      var lastLocation = 0;
+
+      var statueLocation = 19;
+      var toucanLocation = 14;
+
+      var lorikeetLocations = [3, 25];
+      var buntingLocations = [2, 5, 11, 20, 21];
+
+      var gameOver = false;
+
+      function check(position) {
+        if (gameOver) {
+          return;
+        }
+
+        var id = ids[position];
+        var image = document.getElementById(id);
+
+        locationsVisited += 1;
+
+        if (position == statueLocation) {
+          image.src = "image2.png";
+          score -= 3;
+          gameOver = true;
+        } else if (position == toucanLocation) {
+          image.src = "image3.png";
+          score += 5;
+          image.onclick = null;
+        } else if (lorikeetLocations.includes(position)) {
+          image.src = "image4.jpg";
+          score += 3;
+          image.onclick = null;
+        } else if (buntingLocations.includes(position)) {
+          image.src = "image5.jpg";
+          score += 1;
+          image.onclick = null;
+        } else {
+          image.src = "image1.png";
+        }
+
+        document.getElementById("locations").innerHTML =
+          "Number of locations checked is " + locationsVisited;
+
+        document.getElementById("score").innerHTML = "Score is " + score;
+
+        lastLocation = position;
+      }
+
+      function help() {
+        var result = "silence";
+
+        var neighbors = [
+          (lastLocation + 1) % 35,
+          (lastLocation - 1 + 35) % 35,
+          (lastLocation + 7) % 35,
+          (lastLocation - 7 + 35) % 35,
+        ];
+
+        for (let i = 0; i < neighbors.length; i++) {
+          if (buntingLocations.includes(neighbors[i])) {
+            result = "cheep";
+          }
+        }
+
+        var nine = [
+          lastLocation - 8,
+          lastLocation - 7,
+          lastLocation - 6,
+          lastLocation - 1,
+          lastLocation,
+          lastLocation + 1,
+          lastLocation + 6,
+          lastLocation + 7,
+          lastLocation + 8,
+        ];
+
+        if (nine.includes(toucanLocation)) {
+          result = "caw";
+        }
+
+        if (nine.includes(statueLocation)) {
+          result = "thrrum";
+        }
+
+        document.getElementById("help").innerHTML = result;
+      }
+    </script>
   </body>
 </html>
